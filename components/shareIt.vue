@@ -283,13 +283,7 @@ export default {
 
 					if (config.text || vm.text) {
 						shareUrl += `&body=${config.text || vm.text}`;
-					}
-
-					if (vm.url) {
-						shareUrl += `${encodeURIComponent(vm.url)}`;
-					} else {
-						shareUrl += `${encodeURIComponent(document.location.href)}`;
-					}
+					} 
 					break;
 
 				default:
