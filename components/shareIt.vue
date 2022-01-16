@@ -209,18 +209,11 @@ export default {
 			let shareUrl = "";
 			switch (config.platform) {
 				case "twitter":
-					shareUrl = "http://twitter.com/share";
-					if (vm.url) {
-						shareUrl += `?url=${encodeURIComponent(vm.url)}`;
-					} else {
-						shareUrl += `?url=${encodeURIComponent(document.location.href)}`;
-					}
+					shareUrl = "http://twitter.com/share"; 
+
 					if (config.text || vm.text) {
-						shareUrl += `&text=${config.text || vm.text}`;
-					}
-					if (config.hashtags) {
-						shareUrl += `&hashtags=${config.hashtags || ""}`;
-					}
+						shareUrl += `?text=${config.text || vm.text}`;
+					} 
 					break;
 
 				case "linkedin":
