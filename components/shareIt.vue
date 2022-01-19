@@ -249,12 +249,7 @@ export default {
 						shareUrl += `${config.text} `;
 					} else {
 						shareUrl += `${vm.text} `;
-					}
-					if (vm.url) {
-						shareUrl += `${encodeURIComponent(vm.url)}`;
-					} else {
-						shareUrl += `${encodeURIComponent(document.location.href)}`;
-					}
+					} 
 					break;
 
 				case "reddit":
